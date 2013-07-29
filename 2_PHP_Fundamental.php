@@ -17,6 +17,25 @@ for($x=0;$x<$arrlength;$x++)
   }
 ?>
 <?php
+$fname=array("Peter","Ben","Joe");
+$age=array("35","37","43");
+$c=array_combine($fname,$age);
+echo "Peter is ".$c["Peter"]." years old";
+echo "<br />";
+print_r(array_count_values($fname));
+echo "<br />";
+print_r(array_count_values($c));
+echo "<br />";
+print_r(array_keys($c));
+?>
+<?php
+echo "<br />";
+$a1=array_fill(3,4,"blue");
+echo $a1[5];
+print_r($a1);
+?> 
+
+<?php
 echo "<h3>String</h3>";
 $txt="Hello world!";
 echo $txt."<br />";
