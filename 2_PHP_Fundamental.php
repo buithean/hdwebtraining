@@ -18,7 +18,7 @@ for($x=0;$x<$arrlength;$x++)
 ?>
 <?php
 $fname=array("Peter","Ben","Joe");
-$age=array("35","37","43");
+$age=array("35","50","43");
 $c=array_combine($fname,$age);
 echo "Peter is ".$c["Peter"]." years old";
 echo "<br />";
@@ -27,7 +27,27 @@ echo "<br />";
 print_r(array_count_values($c));
 echo "<br />";
 print_r(array_keys($c));
+echo "<br /> sort of fname: <br />";
+ksort($c);
+echo "<br /> in_array <br />";
+echo (in_array("50", $c))."<br />";
+foreach($c as $key=>$test)
+{
+echo "Name: $key. Age: $test<br>";
+}
+
+$a = array(1, 2, 3, 17);
+
+foreach ($a as $v) {
+    echo "Current value of \$a: $v.\n";
+}
+echo "<br />";
+foreach (array(1, 2, 3, 4, 5) as $v) {
+    echo "$v\n";}
+
+print_r (array_merge($fname,$age));	
 ?>
+
 <?php
 echo "<br />";
 $a1=array_fill(3,4,"blue");
@@ -45,6 +65,14 @@ echo "<br />";
 //String concatenation
 $txt2="What a nice day!";
 echo $txt . " " . $txt2;
+//string explode
+$str="chicuong.website@gmail.com";
+$email = explode("@",$str);
+echo "<br />Username: ".$email[0]."<br/>";
+echo "Domain: ".$email[1];
+
+
+
 ?>
 
 <?php
