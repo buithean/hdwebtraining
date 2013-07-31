@@ -83,6 +83,6 @@ while($row = mysqli_fetch_array($result))
 
 </table>
 </form>
-
+<a href='home.php'>Back Home</a>
 </body>
 </html>
