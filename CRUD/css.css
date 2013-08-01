@@ -1,0 +1,45 @@
+ body{
+	padding: 5px;
+	margin: 5px;
+	background-color:#b0c4de;
+}
+
+h1 {color: red;
+	text-align:center;
+	}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
+.tbl {text-align:center;}
+table {border-collapse:collapse;
+		margin: 50px;}
+table td {border: 1px solid blue;}
+
+.tblhd {height:50px;
+		background-color: green;
+		font-size: 24px;
+		color: yellow;
+			}
+a#BH1{
+margin-left:400px;
+}
+.button
+{
+border: none;
+width : 150px;
+}
+
+.lbbutton
+{
+border: none;
+width : 100px;
+}
+
+.cbutton
+{
+border: none;
+width : 200px;
+}

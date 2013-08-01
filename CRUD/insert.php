@@ -10,12 +10,13 @@ $sql="INSERT INTO Persons1 (FirstName, LastName, Age)
 VALUES
 ('$_POST[firstname]','$_POST[lastname]','$_POST[age]')";
 
-if (!mysqli_query($con,$sql))
-  {
-  die('Error: ' . mysqli_error($con));
-  }
-echo "<script>alert('1 record added')</script>";
-
+//if (!empty($_POST['firstname'])&&!empty($_POST['lastname'])&&!empty($_POST['age']))
+	//{
+		if (!mysqli_query($con,$sql))
+  		{
+  		die('Error: ' . mysqli_error($con));
+  		}
+	//}
 mysqli_close($con);
 
 ?> 
